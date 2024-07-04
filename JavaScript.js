@@ -145,7 +145,7 @@ function updateScore(board, player) {
         game = false;  
         setTimeout(function() {
         drawTheWinnersLine(board);  
-        winner.innerHTML ="<h1>Você perdeu !</h1>";
+        winner.innerHTML ="<h1>You loose !</h1>";
         }, 1400);
       return;
       } 
@@ -156,7 +156,7 @@ function updateScore(board, player) {
          game = false;
          drawTheWinnersLine(board);  
          setTimeout(function() {
-         winner.innerHTML ="<h1>Você ganhou !</h1>";
+         winner.innerHTML ="<h1>You won !</h1>";
         }, 1000);
       return;
         } 
@@ -169,7 +169,7 @@ function updateScore(board, player) {
       game = false;
       drawTheWinnersLine(board);  
       setTimeout(function() {
-      winner.innerHTML ="<h1>Jogador '1' ganhou !</h1>";
+      winner.innerHTML ="<h1>player1 won !</h1>";
         }, 1000);
       return;
       } 
@@ -178,7 +178,7 @@ function updateScore(board, player) {
          game = false;
          drawTheWinnersLine(board);  
          setTimeout(function() {
-         winner.innerHTML ="<h1>Jugador '2' ganhou !</h1>";
+         winner.innerHTML ="<h1>player2 won !</h1>";
         }, 1000);
       return;
       } 
@@ -188,7 +188,7 @@ function updateScore(board, player) {
   if (checkBoard(board)) {
      //  console.log(cb); 
       setTimeout(function() {
-       winner.innerHTML= "<h1>Empate !</h1>";
+       winner.innerHTML= "<h1>Tie !</h1>";
        //reset();
       }, 1000);
       return;
@@ -476,3 +476,8 @@ if (depth == 0) {
 }
 
 play.addEventListener
+
+
+
+
+Resources
